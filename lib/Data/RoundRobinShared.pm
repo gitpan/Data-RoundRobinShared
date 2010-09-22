@@ -5,7 +5,7 @@ use warnings;
 use IPC::Shareable (':lock');
 use Carp;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use overload
   'eq' => \&next,
@@ -74,7 +74,7 @@ Data::RoundRobinShared - Serve data in a round robin manner, keeping the data in
 
 	use Data::RoundRobinShared;
 
-	my $sr = new RoundRobinShared(key => 'DataForProcess1',data=> \@data, simple_check => 1);
+	my $sr = new Data::RoundRobinShared(key => 'DataForProcess1',data=> \@data, simple_check => 1);
 	my $item = $sr->next;
 
 =head1 DESCRIPTION
@@ -99,9 +99,13 @@ Release the shared memory.
 
 =back
 
+=head1 SEE ALSO
+
+L<Data::RoundRobin>
+
 =head1 COPYRIGHT
 
-Copyright 2010 by S Pradeep <pradeep@pradeep.net.in>
+Copyright 2010 by S Pradeep E<lt>pradeep@pradeep.net.inE<gt>
 
 This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

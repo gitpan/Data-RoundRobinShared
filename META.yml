@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Data-RoundRobinShared
-version:            0.10
+version:            0.11
 abstract:           Serve data in a round robin manner, keeping the data in a shared memory so that it can be used by multiple processes and each get data in a roundrobin manner.
 author:
     - S Pradeep <pradeep@pradeep.net.in>
